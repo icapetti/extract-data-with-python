@@ -9,7 +9,7 @@ def download_file(url, file_path):
     if response.status_code == req.codes.OK:
         with open(file_path, 'wb') as new_file:
                 new_file.write(response.content)
-        print("Download is finished. File saved: {}".format(file_path))
+        print("PDF Downloaded: {}".format(file_path))
     else:
         response.raise_for_status()
 
