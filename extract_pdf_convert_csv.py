@@ -9,17 +9,14 @@ def download_file(url, file_path):
     if response.status_code == req.codes.OK:
         with open(file_path, 'wb') as new_file:
                 new_file.write(response.content)
-        print("PDF Downloaded: {}".format(file_path))
+        print("Download is finished. File saved: {}".format(file_path))
     else:
         response.raise_for_status()
 
-
 def main():
-    # Link dos dados se auxilio de imoveis para os senadores:
-    # http://www.senado.gov.br/transparencia/lai/secrh/senador_auxilio_imoveis_pdf.pdf
 
-    pdf_file = "pdf_file.pdf"
-    csv_file = "csv_file.csv"
+    pdf_file = "/pdf_file.pdf"
+    csv_file = "/csv_file.csv"
     
     url = input('URL: ')
     path = input('PATH: ')
