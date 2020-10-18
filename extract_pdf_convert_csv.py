@@ -2,7 +2,6 @@
 # Imports
 import requests as req
 import tabula as tb
-import pandas as pd
 
 # Function to download pdf file
 def download_file(url, file_path):
@@ -17,7 +16,6 @@ def download_file(url, file_path):
 
 def main():
     # Link dos dados se auxilio de imoveis para os senadores:
-    # https://www12.senado.leg.br/transparencia/sen/auxilio-moradia-e-imoveis-funcionais
     # http://www.senado.gov.br/transparencia/lai/secrh/senador_auxilio_imoveis_pdf.pdf
 
     pdf_file = "pdf_file.pdf"
